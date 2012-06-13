@@ -6,23 +6,19 @@ RudolF open source development environment for collaborators.
 This is a Vagrant vm setup which automatically sets up a vm with
 java and a running mysql instance, on a 64 bit ubuntu box.  
 
+ - Suggested Version is Version 2 (because it has the latest ubuntu, seems to run better). 
+ - I could add JDK 7 ? maybe... 
+ - TODO: Confirm python version
+ 
 
-Todo (version 3) 
-===========
-
- - Latest VW, Latest Java, etc... 
 
 
-Todo (version 2)
-===========
 
- - JDK 7 ? maybe... 
- - confirm python version
 
 Instructions
 ============
 
-0. Clone this project, cd to it. 
+0. Clone this project, cd to it. And cd to a version (preferabbly the latest).
 
 1. Install vagrant / virtual box.
 
