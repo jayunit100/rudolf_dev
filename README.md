@@ -12,7 +12,7 @@ java and a running mysql instance, on a 64 bit ubuntu box.
  
 
 - v2/ 
-  - I built this box to test out some JDK build errors that were stochastic.  
+  -- I built this box to test out some JDK build errors that were stochastic.  
   - By upgrading v1/ to v2/, I found that some file lock jvm errors magically disappeared.  
   - NOTE : For better performance with large java builds - you can add this to your /etc/security/limits.conf file.
     - vagrant  hard nofile 65535
@@ -21,7 +21,6 @@ java and a running mysql instance, on a 64 bit ubuntu box.
 
 
 - v1/ 
-
   - This box is lucid64 bit.  
   - It has openjdk6, clojure, thrift, vw6, mysql (client+server, ready to use) right out of the box.
 
