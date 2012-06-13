@@ -7,16 +7,17 @@ This is a Vagrant vm setup which automatically sets up a vm with
 java and a running mysql instance, on a 64 bit ubuntu box.  
 
 
-Todo
+Todo (version 3) 
+===========
+
+ - Latest VW, Latest Java, etc... 
+
+
+Todo (version 2)
 ===========
 
  - JDK 7 ? maybe... 
  - confirm python version
-
-Also:
-
- - add other libs like thrift, hadoop, etc... 
-
 
 Instructions
 ============
