@@ -1,6 +1,6 @@
 ############# Just for fun #############
 sudo apt-get update
-sudo apt-get install --assume-yes curl make vim
+sudo apt-get install --assume-yes tree curl make vim
 
 ############# Java #####################
 sudo apt-get install --assume-yes openjdk-6-jdk ant
