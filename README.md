@@ -10,7 +10,7 @@ java and a running mysql instance, on a 64 bit ubuntu box.
 Todo
 ===========
 
- - add clojure
+ - JDK 7 ? maybe... 
  - confirm python version
 
 Also:
