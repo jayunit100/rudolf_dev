@@ -8,28 +8,28 @@ java and a running mysql instance, on a 64 bit ubuntu box.
 
 I will continue to upgrade versions for different reasons, but in general , each version of this vm will have 
 
-1) Clojure
+- Clojure
 
-2) Java 6 or 7
+- Java 6 or 7
 
-3) Python
+- Python
 
-4) Mysql client + server, running on startup
+- Mysql client + server, running on startup
 
-5) Thrift (7+)
+- Thrift (7+)
 
-6) VowpallWabbit 
+- VowpallWabbit 
 
-- v2/ 
-
+v2 
+===
 I built this box to test out some JDK build errors that were stochastic.  By upgrading v1/ to v2/, I found that some file lock jvm errors magically disappeared.  NOTE : For better performance with large java builds - you can add this to your /etc/security/limits.conf file.
 
-vagrant  hard nofile 65535
-vagrant  soft nofile 65535
+    vagrant  hard nofile 65535
 
+    vagrant  soft nofile 65535
 
-- v1/ 
-- 
+v1 
+==
 This box is lucid64 bit.  It has openjdk6, clojure, thrift, vw6, mysql (client+server, ready to use) right out of the box.
 
 
