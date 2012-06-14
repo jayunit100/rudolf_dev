@@ -6,8 +6,6 @@ RudolF open source development environment for collaborators.
 This is a Vagrant vm setup which automatically sets up a vm with
 java and a running mysql instance, on a 64 bit ubuntu box.  
 
-
-<<<<<<< HEAD
 - Clojure
 
 - Java 6 or 7
@@ -19,7 +17,7 @@ java and a running mysql instance, on a 64 bit ubuntu box.
 - Thrift (7+)
 
 - VowpallWabbit 
-=======
+
 Background
 ==========
 
@@ -31,13 +29,13 @@ However, the mess of maintaining shell scripts or puppet scripts for provisionin
 
 With git, vagrant, and virtual box, we can now have a version controlled development environment that can be brought up and torn down from scratch.
 
-Who this is for
-===============
+Who This Project is For
+=======================
 Any Java or Clojure developer who would rather spend their time writing excellent code and testing out new technologies rather than troubleshooting their own computers all day long.  This is especially directed at Mac developers who don't want to spend their time keeping up with the latest XCode installations and libraries.  
 
 
-Why these project exists
-========================
+Why This Project Exists 
+=======================
 
 Development is often hindered by configuration issues.  These come in many shapes and sizes, either : 
 
@@ -50,8 +48,8 @@ Of course, Virtual machines provide an answer to this - but they are :
 - Often require lots of customizations after setup, which can take (literally) several days.
 
 
-How you should use this VM (and how you can help!)
-==================================================
+How YOU should use this VM (and more importantly : HOW YOU CAN HELP ! )
+=======================================================================
 
 Vagrant is super easy to set up, so I won't describe it here.  First - just set it up - and contact me if you have issues, jayunit100 at gmail.  Once running, start developing.  Consider forking it and creating your own version by editing the .sh provisioner, and telling me about it! I would love to 
 have new versions with better optimizations, and potentially more (or better) libraries.   Here is the way I deploy it : 
@@ -64,8 +62,8 @@ have new versions with better optimizations, and potentially more (or better) li
 
 
 
-What this VM provides
-======================
+Languages this Environment is Designed to Support
+=================================================
 
 - Clojure
 - Java 6 or 7
@@ -74,12 +72,16 @@ What this VM provides
 - Thrift (7+)
 - VowpallWabbit 
 
-v2 
-==
->>>>>>> 758c6e8be5ff4bc8f092ea18c74a29b4a4ecfda8
+SUMMARY OF BOXES
+================
+
+There are several boxes, and we intend to build new ones on a regular basis reflecting improvements and updates in Ubuntu, Java, Clojure, MySQL, VowpallWabbit, etc... But there will be some bias in the exact versions libraries on these boxes.  If your a new XXXXXXXX developer, just trying to get started (For example, with Java and Clojure, or you just want a simple working MySQL install), these boxes are IDEAL.  If you have a very specific environment, then I suggest you customize the rudolf.sh to suit your needs (and share them with me - if you get a chance).
+
+In general, the higher "version", the more up to date the OS and libraries will be.  For example, v1 is Ubuntu 10.01, and v2 is Ubuntu 12, etc... 
+
 
 v2 
-===
+==
 I built this box to test out some JDK build errors that were stochastic.  By upgrading v1/ to v2/, I found that some file lock jvm errors magically disappeared.  NOTE : For better performance with large java builds - you can add this to your /etc/security/limits.conf file.
 
     vagrant  hard nofile 65535
