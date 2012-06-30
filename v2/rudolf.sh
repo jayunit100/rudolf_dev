@@ -3,7 +3,10 @@ sudo apt-get update
 sudo apt-get install --assume-yes tree curl make vim
 
 ############# Java #####################
-sudo apt-get install --assume-yes openjdk-6-jdk ant
+#sudo apt-get install --assume-yes openjdk-6-jdk ant
+sudo add-apt-repository ppa:eugenesan/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
 
 ############ CLOJURE ####################
 sudo wget -qO /usr/local/bin/lein http://github.com/technomancy/leiningen/raw/stable/bin/lein
