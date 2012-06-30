@@ -2,11 +2,24 @@
 sudo apt-get update
 sudo apt-get install --assume-yes tree curl make vim
 
-############# Java #####################
+
+
+######
+TODO : Prompt if you want real java or open jdk, open jdk should work for most cases,
+but for hadoop, you want sun.
+#######
+
+############# Java ########
 #sudo apt-get install --assume-yes openjdk-6-jdk ant
-sudo add-apt-repository ppa:eugenesan/java
-sudo apt-get update
-sudo apt-get install oracle-java7-installer
+#sudo apt-get install python-software-properties
+
+#############SUN JAVA######
+
+wget https://raw.github.com/flexiondotorg/oab-java6/master/oab-java.sh -O oab-java6.sh
+chmod +x oab-java6.sh
+sudo ./oab-java6.sh
+sudo apt-get install sun-java6-bin sun-java6-fonts sun-java6-javadb sun-java6-jdk sun-java6-jre sun-java6-plugin sun-java6-source
+sudo apt-get install sun-java6-jre sun-java6-plugin
 
 ############ CLOJURE ####################
 sudo wget -qO /usr/local/bin/lein http://github.com/technomancy/leiningen/raw/stable/bin/lein
