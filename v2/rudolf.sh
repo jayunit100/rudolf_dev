@@ -20,6 +20,9 @@ chmod +x oab-java6.sh
 sudo ./oab-java6.sh
 sudo apt-get install sun-java6-bin sun-java6-fonts sun-java6-javadb sun-java6-jdk sun-java6-jre sun-java6-plugin sun-java6-source
 sudo apt-get install sun-java6-jre sun-java6-plugin
+sudo apt-get install ant
+sudo apt-get install ant-optional
+
 
 ############ CLOJURE ####################
 sudo wget -qO /usr/local/bin/lein http://github.com/technomancy/leiningen/raw/stable/bin/lein
