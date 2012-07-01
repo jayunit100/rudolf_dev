@@ -71,4 +71,6 @@ vw6 --version
 ########### YIPEEEEE ####################
 echo "Done ! Welcome to RudolF !" 
 
-########### Python ######################
+echo "Now make sure to add -- export JAVA_HOME=/usr/lib/jvm/java-6-sun-1.6.0.33/ to your .bashrc file for running ant."
+
+
