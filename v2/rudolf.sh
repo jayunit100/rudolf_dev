@@ -9,15 +9,7 @@ TODO : Prompt if you want real java or open jdk, open jdk should work for most c
 but for hadoop, you want sun.
 #######
 
-############# Java ########
-#sudo apt-get install --assume-yes openjdk-6-jdk ant
-#sudo apt-get install python-software-properties
-sudo apt-get purge openjdk*
-sud apt-add-repository ppa:flexiondotorg/java
-sudo apt-get update
-sudo apt-get install sun-java6-jre sun-java6-jdk sun-java6-plugin
-
-#############SUN JAVA######
+###SUN JAVA###
 
 wget https://raw.github.com/flexiondotorg/oab-java6/master/oab-java.sh -O oab-java6.sh
 chmod +x oab-java6.sh
