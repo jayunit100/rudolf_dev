@@ -15,14 +15,10 @@ but for hadoop, you want sun.
 
 #############SUN JAVA######
 
-wget https://raw.github.com/flexiondotorg/oab-java6/master/oab-java.sh -O oab-java6.sh
-chmod +x oab-java6.sh
-sudo ./oab-java6.sh
-sudo apt-get install sun-java6-bin sun-java6-fonts sun-java6-javadb sun-java6-jdk sun-java6-jre sun-java6-plugin sun-java6-source
-sudo apt-get install sun-java6-jre sun-java6-plugin
-sudo apt-get install ant
-sudo apt-get install ant-optional
-
+sudo apt-get update
+sudo apt-get install maven2
+sudo apt-get install openjdk-7-jdk
+echo "Now you can add lib/open-jdk-.../ to your JAVA_HOME"
 
 ############ CLOJURE ####################
 sudo wget -qO /usr/local/bin/lein http://github.com/technomancy/leiningen/raw/stable/bin/lein
@@ -72,5 +68,7 @@ vw6 --version
 echo "Done ! Welcome to RudolF !" 
 
 echo "Now make sure to add -- export JAVA_HOME=/usr/lib/jvm/java-6-sun-1.6.0.33/ to your .bashrc file for running ant."
+
+
 
 
