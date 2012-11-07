@@ -9,11 +9,7 @@ TODO : Prompt if you want real java or open jdk, open jdk should work for most c
 but for hadoop, you want sun.
 #######
 
-############# Java ########
-#sudo apt-get install --assume-yes openjdk-6-jdk ant
-#sudo apt-get install python-software-properties
-
-#############SUN JAVA######
+###SUN JAVA###
 
 sudo apt-get update
 sudo apt-get install maven2
@@ -48,6 +44,10 @@ installnoninteractive mysql-server
 echo "Now installing clojure via lein"
 
 ############# VW6 ######################
+
+# for yum, run s/apt-get/yum/g on this script, 
+# and run sudo yum install boost-devel  
+# also, remove the --assume-yes (its only an apt-get option).
 sudo apt-get install make --assume-yes
 sudo apt-get install g++ --assume-yes
 sudo apt-get install libboost-all-dev --assume-yes 
