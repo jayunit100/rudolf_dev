@@ -22,7 +22,7 @@ sudo apt-get update
 echo "Done."
 echo ""
 echo "Installing Sun Java JDK 7..."
-sudo apt-get install oracle-java7-installer
+sudo apt-get install oracle-java7-installer -y
 echo "Sun Java Installation Done."
 echo ""
 echo "Setting the JAVA path to the environment variable..."
