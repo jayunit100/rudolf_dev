@@ -27,6 +27,7 @@ echo ""
 bash
 echo ""
 
+#Installing Hadoop
 wget http://apache.mirrors.timporter.net/hadoop/common/hadoop-1.0.4/hadoop-1.0.4.tar.gz
 sudo tar -xvf hadoop-1.0.4.tar.gz
 mv hadoop-1.0.4 hadoop
