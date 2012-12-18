@@ -6,6 +6,7 @@ Vagrant::Config.run do |config|
   vmbox = "fedora"
   vmboxurl = "https://raw.github.com/jayunit100/rudolf_web/master/public/fedora-17.box"
   gluster_repo="http://download.gluster.org/pub/gluster/glusterfs/LATEST/Fedora/fedora-17/x86_64/glusterfs-server-3.3.1-1.fc17.x86_64.rpm"
+  #vagrant box add fedora17 /Users/jayunit100/Development/rudolf_web/public/fedora-17.box
   gluster_file ="glusterfs-server-3.3.1-1.fc17.x86_64.rpm"  
 
   config.vm.define :gluster1 do |gluster1|
